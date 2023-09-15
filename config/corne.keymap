@@ -16,16 +16,16 @@
 #define QWERTY 4
 
 
+// conditional_layers {
+// 	compatible = "zmk,conditional-layers";
+// 	tri_layer   {
+// 		if-layers = <LOWER RAISE>;
+// 		then-layer = <ADJUST>;
+// 	};
+// };
+
+
 / {
-
-	// conditional_layers {
-	// 	compatible = "zmk,conditional-layers";
-	// 	tri_layer   {
-	// 		if-layers = <LOWER RAISE>;
-	// 		then-layer = <ADJUST>;
-	// 	};
-	// };
-
 	keymap {
 
 		compatible = "zmk,keymap";
@@ -42,6 +42,7 @@
                   &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
                         >;
                 };
+
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
