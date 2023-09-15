@@ -1,0 +1,27 @@
+#define TAPPING_TERM_MS 280
+#define QUICK_TAP_MS 175
+#define GLOBAL_QUICK_TAP_MS 150
+
+&mt {
+  flavor = "balanced";
+  tapping-term-ms = <TAPPING_TERM_MS>;
+  quick-tap-ms = <QUICK_TAP_MS>;
+  global-quick-tap-ms = <GLOBAL_QUICK_TAP_MS>;
+};
+
+/ {
+	behaviors {
+		/*
+		- tap: space
+		- hold: &mo lower
+		*/
+		/omit-if-no-ref/ sol: space_or_layer {
+		// label = "SOL";
+		compatible = "zmk,behavior-hold-tap";
+		flavor = "balanced";
+		tapping-term-ms = <TAPPING_TERM_MS>;
+		bindings = <&mo>, <&kp>;
+		#binding-cells = <2>;
+		};
+	};
+};
