@@ -26,11 +26,27 @@
 };
 
 / {
+
+	    behaviors {
+			/*
+			- tap: space
+			- hold: &mo lower
+			*/
+			/omit-if-no-ref/ sol: space_or_layer {
+			label = "SOL";
+			compatible = "zmk,behavior-hold-tap";
+			flavor = "balanced";
+			tapping-term-ms = <TAPPING_TERM_MS>;
+			bindings = <&mo>, <&num_dance>;
+			#binding-cells = <2>;
+			};
+		};
+
 		conditional_layers {
 			compatible = "zmk,conditional-layers";
             tri_layer   {
-                if-layers = <1 2>;
-                then-layer = <3>;
+                if-layers = <LOWER RAISE>;
+                then-layer = <ADJUST>;
 			};
 		};
 
@@ -51,7 +67,7 @@
     &kp LSHFT 		&kp Z     		&kp X      		&kp C      		&kp V       	&kp B               &kp K           &kp M       	&kp COMMA  		&kp DOT   		&kp FSLH  		&kp LCTRL
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
 //                                                  36              37              38                  39              40              41
-                                                    &kp LALT        &LGUI           &mt (1) (SPACE)		&kp SPACE 		&mo 2          &kp RALT
+                                                    &kp LALT        &LGUI           &sol LOWER SPACE	&lt 2 SPACE 	&mo 2          &kp RALT
 //                                                 ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
                     >;
                 };
