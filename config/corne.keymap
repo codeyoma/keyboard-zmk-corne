@@ -33,7 +33,7 @@
 			- hold: &mo lower
 			*/
 			/omit-if-no-ref/ sol: space_or_layer {
-			label = "SOL";
+			// label = "SOL";
 			compatible = "zmk,behavior-hold-tap";
 			flavor = "balanced";
 			tapping-term-ms = <TAPPING_TERM_MS>;
