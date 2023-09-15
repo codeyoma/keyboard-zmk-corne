@@ -8,12 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#DEFINE DEFAULT 0
-#DEFINE LOWER 1
-#DEFINE RAISE 2
-#DEFINE ADJUST 3
-#DEFINE QWERTY 4
-
 / {
 		conditional_layers {
 			compatible = "zmk,conditional-layers";
@@ -40,7 +34,7 @@
     &kp LSHFT 		&kp Z     		&kp X      		&kp C      		&kp V       	&kp B               &kp K           &kp M       	&kp COMMA  		&kp DOT   		&kp FSLH  		&kp LCTRL
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
 //                                                  36              37              38                  39              40              41
-                                                    &kp LALT        &LGUI		 	&lt LOWER SPACE     &kp SPACE 		&mo RAISE       &kp RALT
+                                                    &kp LALT        &LGUI		 	&lt L1 SPACE        &kp SPACE 		&mo L2          &kp RALT
 //                                                 ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
                     >;
                 };
