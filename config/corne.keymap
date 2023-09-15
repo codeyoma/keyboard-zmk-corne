@@ -14,6 +14,17 @@
 #define ADJUST 3
 #define QWERTY 4
 
+#define TAPPING_TERM_MS 280
+#define QUICK_TAP_MS 175
+#define GLOBAL_QUICK_TAP_MS 150
+
+&mt {
+  flavor = "balanced";
+  tapping-term-ms = <TAPPING_TERM_MS>;
+  quick-tap-ms = <QUICK_TAP_MS>;
+  global-quick-tap-ms = <GLOBAL_QUICK_TAP_MS>;
+};
+
 / {
 		conditional_layers {
 			compatible = "zmk,conditional-layers";
@@ -40,7 +51,7 @@
     &kp LSHFT 		&kp Z     		&kp X      		&kp C      		&kp V       	&kp B               &kp K           &kp M       	&kp COMMA  		&kp DOT   		&kp FSLH  		&kp LCTRL
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
 //                                                  36              37              38                  39              40              41
-                                                    &kp LALT        &LGUI           &mt 1 SPACE			&kp SPACE 		&mo 2          &kp RALT
+                                                    &kp LALT        &LGUI           &mt (1) (SPACE)		&kp SPACE 		&mo 2          &kp RALT
 //                                                 ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
                     >;
                 };
