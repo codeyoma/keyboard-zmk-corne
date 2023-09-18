@@ -24,7 +24,6 @@
 #define NERD_RIGHT &nerd_w_move U
 
 
-/*
 #define MACRO_(name, keys)					\
 /omit-if-no-ref/ name: name##_macro {		\
     label          = #name;					\
@@ -34,7 +33,6 @@
     #binding-cells = <0>;					\
 	bindings       = <keys>;				\
 };
-*/
 
 / {
     macros {
