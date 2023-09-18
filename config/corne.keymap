@@ -39,7 +39,7 @@
 
 		/omit-if-no-ref/ nerd_w_move: nerd_l_macro {
 			label          = "nerd_w_move";
-			compatible     = "zmk,behavior-macro";
+			compatible     = "zmk,behavior-macro-one-param";
 			tap-ms         = <0>;
 			wait-ms        = <0>;
 			#binding-cells = <1>;
