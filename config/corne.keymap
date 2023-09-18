@@ -34,10 +34,26 @@ name: name##_macro {                      \
 
 / {
     macros {
-        MACRO_(nerd_l,  &kp w &kp h)
-        MACRO_(nerd_r,  &kp w &kp u)
-        // MACRO_(nerd_l,  &kp LC(w) &kp h)
-        // MACRO_(nerd_r,  &kp LC(w) &kp u)
+		nerd_l: nerd_l_macro {                      \
+			label          = nerd_l;               \
+			compatible     = "zmk,behavior-macro";\
+			tap-ms         = <1>;                 \
+			wait-ms        = <1>;                 \
+			#binding-cells = <0>;                 \
+			bindings       = <&kp LC(w) &kp h>;              \
+		};
+		nerd_r: nerd_r_macro {                      \
+			label          = nerd_r;               \
+			compatible     = "zmk,behavior-macro";\
+			tap-ms         = <1>;                 \
+			wait-ms        = <1>;                 \
+			#binding-cells = <0>;                 \
+			bindings       = <&kp LC(w) &kp u>;              \
+		};
+        // MACRO_(nerd_l, &kp w &kp h)
+        // MACRO_(nerd_r, &kp w &kp u)
+        // MACRO_(nerd_l, &kp LC(w) &kp h)
+        // MACRO_(nerd_r, &kp LC(w) &kp u)
     };
 };
 
