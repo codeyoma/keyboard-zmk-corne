@@ -22,33 +22,34 @@
 #define MOVE_RIGHT &kp LG(RBKT)
 
 
-#define MACRO_(name, keys)                \
-name: name##_macro {                      \
-    label          = #name;               \
-    compatible     = "zmk,behavior-macro";\
-    tap-ms         = <1>;                 \
-    wait-ms        = <1>;                 \
-    #binding-cells = <0>;                 \
-	bindings       = <keys>;              \
+#define MACRO_(name, keys)					\
+/omit-if-no-ref/ name: name##_macro {		\
+    label          = #name;					\
+    compatible     = "zmk,behavior-macro";	\
+    tap-ms         = <1>;					\
+    wait-ms        = <1>;					\
+    #binding-cells = <0>;					\
+	bindings       = <keys>;				\
 };
 
 / {
     macros {
-		nerd_l: nerd_l_macro {                      \
-			label          = nerd_l;               \
-			compatible     = "zmk,behavior-macro";\
-			tap-ms         = <1>;                 \
-			wait-ms        = <1>;                 \
-			#binding-cells = <0>;                 \
-			bindings       = <&kp LC(w) &kp h>;              \
+		/omit-if-no-ref/ nerd_l: nerd_l_macro {
+			label          = nerd_l;
+			compatible     = "zmk,behavior-macro";
+			tap-ms         = <1>;
+			wait-ms        = <1>;
+			#binding-cells = <0>;
+			bindings       = <&kp LC(w) &kp h>;
 		};
-		nerd_r: nerd_r_macro {                      \
-			label          = nerd_r;               \
-			compatible     = "zmk,behavior-macro";\
-			tap-ms         = <1>;                 \
-			wait-ms        = <1>;                 \
-			#binding-cells = <0>;                 \
-			bindings       = <&kp LC(w) &kp u>;              \
+
+		/omit-if-no-ref/ nerd_r: nerd_r_macro {
+			label          = nerd_r;
+			compatible     = "zmk,behavior-macro";
+			tap-ms         = <1>;
+			wait-ms        = <1>;
+			#binding-cells = <0>;
+			bindings       = <&kp LC(w) &kp u>;
 		};
         // MACRO_(nerd_l, &kp w &kp h)
         // MACRO_(nerd_r, &kp w &kp u)
