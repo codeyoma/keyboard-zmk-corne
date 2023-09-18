@@ -90,7 +90,7 @@
     &kp LSHFT 		&kp Z     		&kp X      		&kp C      		&kp V       	&kp B               &kp N           &kp M       	&kp COMMA  		&kp DOT   		&kp FSLH  		&kp RCTRL
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
 //                                                  36              37              38                  39              40              41
-                                                    &kp LCTRL       &kp LGUI		&mo LOWER			&kp SPACE 		&kp RAISE		&kp RALT
+                                                    &kp LCTRL       &kp LGUI		&mo LOWER			&kp SPACE 		&mo RAISE		&kp RALT
 //                                                 ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
                                                     // &kp LALT        &kp LGUI		&lt LOWER SPACE		&lt RAISE SPACE &kp RGUI		&kp RALT
 			>;
@@ -110,7 +110,7 @@
     &kp LSHFT 		&kp Z     		&kp X      		&kp C      		&kp V       	&kp B               &kp K           &kp M       	&kp COMMA  		&kp DOT   		&kp FSLH  		&kp RCTRL
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
 //                                                  36              37              38                  39              40              41
-                                                    &kp LCTRL       &kp LGUI		&mo LOWER			&kp SPACE 		&kp RAISE		&kp RALT
+                                                    &kp LCTRL       &kp LGUI		&mo LOWER			&kp SPACE 		&mo RAISE		&kp RALT
 //                                                 ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
 			>;
 		};
