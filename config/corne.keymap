@@ -24,15 +24,17 @@
 #define NERD_MOVE &nerd_w_move
 
 
-// #define MACRO_(name, keys)					\
-// /omit-if-no-ref/ name: name##_macro {		\
-//     label          = #name;					\
-//     compatible     = "zmk,behavior-macro";	\
-//     tap-ms         = <1>;					\
-//     wait-ms        = <1>;					\
-//     #binding-cells = <0>;					\
-// 	bindings       = <keys>;				\
-// };
+/*
+#define MACRO_(name, keys)					\
+/omit-if-no-ref/ name: name##_macro {		\
+    label          = #name;					\
+    compatible     = "zmk,behavior-macro";	\
+    tap-ms         = <1>;					\
+    wait-ms        = <1>;					\
+    #binding-cells = <0>;					\
+	bindings       = <keys>;				\
+};
+*/
 
 / {
     macros {
@@ -43,7 +45,7 @@
 			tap-ms			= <0>;
 			wait-ms			= <0>;
 			#binding-cells	= <1>;
-			bindings		= <&macro_press &kp LCTRL &kp w>, <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>, <&macro_pause_for_release>, <&macro_release &kp LCTRL &kp w>;
+			bindings		= <&macro_press &kp LCTRL &kp W>, <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>, <&macro_pause_for_release>, <&macro_release &kp LCTRL &kp W>;
 		};
 
         // MACRO_(nerd_l, &kp w &kp h)
