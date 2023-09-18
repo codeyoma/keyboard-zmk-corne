@@ -29,13 +29,15 @@ name: name##_macro {                      \
     tap-ms         = <1>;                 \
     wait-ms        = <1>;                 \
     #binding-cells = <0>;                 \
-    bindings       = <keys>;              \
+	bindings       = <keys>;              \
 };
 
 / {
     macros {
-        MACRO_(nerd_l,  &kp LC(w) &kp h)
-        MACRO_(nerd_r,  &kp LC(w) &kp u)
+        MACRO_(nerd_l,  &kp w &kp h)
+        MACRO_(nerd_r,  &kp w &kp u)
+        // MACRO_(nerd_l,  &kp LC(w) &kp h)
+        // MACRO_(nerd_r,  &kp LC(w) &kp u)
     };
 };
 
