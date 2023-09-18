@@ -90,7 +90,7 @@
     &kp LSHFT 		&kp Z     		&kp X      		&kp C      		&kp V       	&kp B               &kp N           &kp M       	&kp COMMA  		&kp DOT   		&kp FSLH  		&kp RCTRL
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
 //                                                  36              37              38                  39              40              41
-                                                    &kp LCTRL       &kp LGUI		&mo LOWER			&kp SPACE 		&mo RAISE		&kp RALT
+                                                    &kp LCTRL       &kp LGUI		&mo LOWER			&mo RAISE		&kp SPACE 		&kp RALT
 //                                                 ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
                                                     // &kp LALT        &kp LGUI		&lt LOWER SPACE		&lt RAISE SPACE &kp RGUI		&kp RALT
 			>;
