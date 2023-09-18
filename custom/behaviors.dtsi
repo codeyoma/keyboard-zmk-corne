@@ -1,5 +1,5 @@
-#define TAPPING_TERM_MS 200
-#define QUICK_TAP_MS 175
+#define TAPPING_TERM_MS 140
+#define QUICK_TAP_MS 140
 #define GLOBAL_QUICK_TAP_MS 150
 
 &lt {
