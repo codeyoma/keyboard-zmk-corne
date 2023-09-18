@@ -22,20 +22,21 @@
 #define MOVE_RIGHT &kp LG(RBKT)
 
 
-#define MACRO_(name, keys)					\
-/omit-if-no-ref/ name: name##_macro {		\
-    label          = #name;					\
-    compatible     = "zmk,behavior-macro";	\
-    tap-ms         = <1>;					\
-    wait-ms        = <1>;					\
-    #binding-cells = <0>;					\
-	bindings       = <keys>;				\
-};
+// #define MACRO_(name, keys)					\
+// /omit-if-no-ref/ name: name##_macro {		\
+//     label          = #name;					\
+//     compatible     = "zmk,behavior-macro";	\
+//     tap-ms         = <1>;					\
+//     wait-ms        = <1>;					\
+//     #binding-cells = <0>;					\
+// 	bindings       = <keys>;				\
+// };
 
 / {
     macros {
+
 		/omit-if-no-ref/ nerd_l: nerd_l_macro {
-			label          = nerd_l;
+			label          = "nerd_l";
 			compatible     = "zmk,behavior-macro";
 			tap-ms         = <1>;
 			wait-ms        = <1>;
@@ -44,7 +45,7 @@
 		};
 
 		/omit-if-no-ref/ nerd_r: nerd_r_macro {
-			label          = nerd_r;
+			label          = "nerd_r";
 			compatible     = "zmk,behavior-macro";
 			tap-ms         = <1>;
 			wait-ms        = <1>;
