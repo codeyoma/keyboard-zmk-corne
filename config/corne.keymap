@@ -25,7 +25,7 @@
 
 
 #define MACRO_(name, keys)					\
-/omit-if-no-ref/ #name: name##_macro {		\
+/omit-if-no-ref/ name: name##_macro {		\
     label          = #name;					\
     compatible     = "zmk,behavior-macro";	\
     tap-ms         = <1>;					\
