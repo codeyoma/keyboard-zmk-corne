@@ -21,6 +21,8 @@
 #define MOVE_LEFT &kp LG(LBKT)
 #define MOVE_RIGHT &kp LG(RBKT)
 
+#define NERD_MOVE &nerd_w_move
+
 
 // #define MACRO_(name, keys)					\
 // /omit-if-no-ref/ name: name##_macro {		\
@@ -35,27 +37,23 @@
 / {
     macros {
 
-		/omit-if-no-ref/ nerd_l: nerd_l_macro {
-			label          = "nerd_l";
+		/omit-if-no-ref/ nerd_w_move: nerd_l_macro {
+			label          = "nerd_w_move";
 			compatible     = "zmk,behavior-macro";
-			tap-ms         = <1>;
-			wait-ms        = <1>;
-			#binding-cells = <0>;
-			bindings       = <&kp LC(w) &kp h>;
+			tap-ms         = <0>;
+			wait-ms        = <0>;
+			#binding-cells = <1>;
+			bindings
+				= <&macro_press &kp LCTRL &kp w>
+				, <&macro_param_1to1>
+				, <&macro_tap &kp MACRO_PLACEHOLDER>
+				, <&macro_pause_for_release>
+				, <&macro_release &kp LCTRL &kp w>
+				;
 		};
 
-		/omit-if-no-ref/ nerd_r: nerd_r_macro {
-			label          = "nerd_r";
-			compatible     = "zmk,behavior-macro";
-			tap-ms         = <1>;
-			wait-ms        = <1>;
-			#binding-cells = <0>;
-			bindings       = <&kp LC(w) &kp u>;
-		};
         // MACRO_(nerd_l, &kp w &kp h)
         // MACRO_(nerd_r, &kp w &kp u)
-        // MACRO_(nerd_l, &kp LC(w) &kp h)
-        // MACRO_(nerd_r, &kp LC(w) &kp u)
     };
 };
 
@@ -120,7 +118,7 @@
 	&kp CAPS        FOCUS_NEXT      &kp INS       	&kp HOME        &kp PG_UP       MOVE_LEFT        	MOVE_RIGHT      &kp MINUS     	&kp PLUS        &kp LBKT       	&kp RBKT        &kp SQT
 // ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 //  24              25              26              27              28              29                  30              31              32              33              34              35
-    ________      	FOCUS_MENU      &kp DEL        	&kp END        	&kp PG_DN       &nerd_l            	&nerd_r        	&kp UNDER  		&kp EQUAL       ________        &kp BSLH        ________
+    ________      	FOCUS_MENU      &kp DEL        	&kp END        	&kp PG_DN       &NERD_MOVE h        &NERD_MOVE u    &kp UNDER  		&kp EQUAL       ________        &kp BSLH        ________
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
 //                                                  36              37              38                  39              40              41
                                     	            ________       	________        ________           	________		&kp INT1        &kp INT2
