@@ -9,6 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include "../custom/behaviors.dtsi"
 
+
+#define NONE	0
 #define DEFAULT	0
 #define COLEMAK	1
 #define LOWER	2
@@ -142,9 +144,6 @@
 //                                                 ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
 			>;
 		};
-
-
-
 
 		adjust_layer {
 			bindings = <
