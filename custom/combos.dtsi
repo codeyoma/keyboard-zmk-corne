@@ -2,13 +2,13 @@
  *	https://zmk.dev/docs/config/combos
  */
 
-#define COMBO_(NAME, KEYPOS, LAYERS, TERM, BINDINGS, ...) \
-    combo_##NAME { 													\
-        timeout-ms			= <TERM>; 								\
-        bindings			= <BINDINGS>; 							\
-        key-positions		= <KEYPOS>; 							\
-        layers				= <LAYERS>; 							\
-		__VA_ARGS__ 												\
+#define COMBO_(NAME, BINDINGS, KEYPOS, LAYERS, TERM, ...)	\
+    combo_##NAME { 											\
+        timeout-ms			= <TERM>; 						\
+        bindings			= <BINDINGS>; 					\
+        key-positions		= <KEYPOS>; 					\
+        layers				= <LAYERS>; 					\
+		__VA_ARGS__ 										\
     };
 
 / {
@@ -24,21 +24,18 @@
 					╰────────────╯  ╰────────────╯
 		*/
 
-/*
-		COMBO_(minus,	19 20 21,	ALL,	50,	&kp MINUS)
-		COMBO_(plus,	19 8 21,	ALL,	50,	&kp PLUS)
-		COMBO_(equal,	19 8 9,		ALL,	50,	&kp EQUAL)
-		*/
+		COMBO_(minus,	&kp MINUS, 	19 20 21,	ALL,	50)
+		COMBO_(plus,	&kp PLUS,	19 8 21,	ALL,	50)
+		COMBO_(equal,	&kp EQUAL,	19 8 9,		ALL,	50)
 
-		COMBO_(left_bracket,		7 19,	ALL,	50,	&kp LBKT)
-		COMBO_(right_bracket,		8 20,	ALL,	50,	&kp RBKT)
-		COMBO_(left_parenthesis,	9 21,	ALL,	50,	&kp LPAR)
-		COMBO_(right_parenthesis,	10 22,	ALL,	50,	&kp RPAR)
+		COMBO_(left_bracket,		&kp LBKT,	7 19,	ALL,	50)
+		COMBO_(right_bracket,		&kp RBKT,	8 20,	ALL,	50)
+		COMBO_(left_parenthesis,	&kp LPAR,	9 21,	ALL,	50)
+		COMBO_(right_parenthesis,	&kp RPAR,	10 22,	ALL,	50)
 
-		COMBO_(right_desk,	32  33,	DEFAULT COLEMAK,	50,	&kp LC(RIGHT))
-		COMBO_(left_desk,	31  32,	DEFAULT COLEMAK,	50,	&kp LC(LEFT))
-
-		COMBO_(next_tab,	20  21,	DEFAULT COLEMAK,	50,	&kp LC(TAB))
-		COMBO_(prev_tab,	19  20,	DEFAULT COLEMAK,	50,	&kp LC(LS(TAB)))
+		COMBO_(right_desk,	&kp LC(RIGHT),	32  33,	DEFAULT COLEMAK,	50)
+		COMBO_(left_desk,	&kp LC(LEFT),	31  32,	DEFAULT COLEMAK,	50)
+		COMBO_(next_tab,	&kp LC(TAB),		20  21,	DEFAULT COLEMAK,	50)
+		COMBO_(prev_tab,	&kp LC(LS(TAB)),	19  20,	DEFAULT COLEMAK,	50)
 	};
 };
