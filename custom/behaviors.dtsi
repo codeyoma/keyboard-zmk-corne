@@ -24,5 +24,21 @@
             tapping-term-ms = <200>;
             bindings = <&kp LGUI>, <&kp LALT>;
         };
+
+		td_low_adj: td_low_adj {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_LOWER_ADJUST";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo LOWER>, <&mo ADJUST>;
+        };
+
+		td_rai_adj: td_rai_adj {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_RAISE_ADJUST";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo RIASE>, <&mo ADJUST>;
+        };
     };
 };
