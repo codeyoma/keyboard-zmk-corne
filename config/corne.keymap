@@ -19,12 +19,11 @@
 
 #define ________	&trans
 #define XXXXXXXX 	&none
+
 #define FOCUS_NEXT	&kp LC(F4)
 #define FOCUS_MENU	&kp LC(F2)
 #define MOVE_LEFT	&kp LG(LBKT)
 #define MOVE_RIGHT	&kp LG(RBKT)
-#define NERD_LEFT	&nerd_l_macro
-#define NERD_RIGHT	&nerd_r_macro
 
 #define TAPPING_TERM_MS		140
 #define QUICK_TAP_MS		140
@@ -102,7 +101,7 @@
 	&kp CAPS        FOCUS_NEXT      &kp INS       	&kp HOME        &kp PG_UP       MOVE_LEFT        	MOVE_RIGHT      &kp MINUS     	&kp PLUS        &kp LBKT       	&kp RBKT        &kp SQT
 // ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 //  24              25              26              27              28              29                  30              31              32              33              34              35
-    ________      	FOCUS_MENU      &kp DEL        	&kp END        	&kp PG_DN       NERD_LEFT        	NERD_RIGHT    	&kp UNDER  		&kp EQUAL       ________        &kp BSLH        ________
+    ________      	FOCUS_MENU      &kp DEL        	&kp END        	&kp PG_DN       &macro_nerd_l		&macro_nerd_r   &kp UNDER  		&kp EQUAL       ________        &kp BSLH        ________
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
 //                                                  36              37              38                  39              40              41
                                     	            ________       	________        ________           	&mo RAISE		&kp INT1 		&kp INT2
