@@ -1,3 +1,7 @@
+/**
+ *	https://zmk.dev/docs/config/behaviors
+ */
+
 &lt {
     flavor          = "tap-preferred";
     tapping-term-ms = <200>;

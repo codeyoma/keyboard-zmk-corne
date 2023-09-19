@@ -1,3 +1,7 @@
+/**
+ *	https://zmk.dev/docs/behaviors/macros
+ */
+
 #define MACRO_(NAME, TAP, WAIT, CELLS, BINDINGS, ...)	\
 	/omit-if-no-ref/ macro_##NAME: macro_##NAME {		\
     label          = #NAME;								\

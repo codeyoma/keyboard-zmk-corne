@@ -1,10 +1,13 @@
-#define COMBO_(NAME, KEYPOS, LAYERS, TERM, QUICKTAP, BINDINGS, ...) \
+/**
+ *	https://zmk.dev/docs/config/combos
+ */
+
+#define COMBO_(NAME, KEYPOS, LAYERS, TERM, BINDINGS, ...) \
     combo_##NAME { 													\
-        timeout-ms = <TERM>; 										\
-        bindings = <BINDINGS>; 										\
-        key-positions = <KEYPOS>; 									\
-        layers = <LAYERS>; 											\
-        global-quick-tap-ms = <QUICKTAP>; 							\
+        timeout-ms			= <TERM>; 								\
+        bindings			= <BINDINGS>; 							\
+        key-positions		= <KEYPOS>; 							\
+        layers				= <LAYERS>; 							\
 		__VA_ARGS__ 												\
     };
 
@@ -22,8 +25,8 @@
 		*/
 
 
-		COMBO_(next_tab,	32  33,	DEFAULT COLEMAK,	80,		50,		&kp LC(TAB))
-		COMBO_(prev_tab,	33  32,	DEFAULT COLEMAK,	80,		50,		&kp LS(LC(TAB)),)
+		COMBO_(next_tab,	32  33,	DEFAULT COLEMAK,	80,		&kp LC(TAB))
+		COMBO_(prev_tab,	33  32,	DEFAULT COLEMAK,	80,		&kp LS(LC(TAB)))
 
 	};
 };
