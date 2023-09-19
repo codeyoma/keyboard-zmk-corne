@@ -24,14 +24,16 @@
 					╰────────────╯  ╰────────────╯
 		*/
 
-		COMBO_(minus,	19 20 21,	-1,	50,	&kp MINUS)
-		COMBO_(plus,	19 8 21,	-1,	50,	&kp PLUS)
-		COMBO_(equal,	19 8 9,		-1,	50,	&kp EQUAL)
+/*
+		COMBO_(minus,	19 20 21,	ALL,	50,	&kp MINUS)
+		COMBO_(plus,	19 8 21,	ALL,	50,	&kp PLUS)
+		COMBO_(equal,	19 8 9,		ALL,	50,	&kp EQUAL)
+		*/
 
-		COMBO_(left_bracket,		7 19,	-1,	50,	&kp LBKT)
-		COMBO_(right_bracket,		8 20,	-1,	50,	&kp RBKT)
-		COMBO_(left_parenthesis,	9 21,	-1,	50,	&kp LPAR)
-		COMBO_(right_parenthesis,	10 22,	-1,	50,	&kp RPAR)
+		COMBO_(left_bracket,		7 19,	ALL,	50,	&kp LBKT)
+		COMBO_(right_bracket,		8 20,	ALL,	50,	&kp RBKT)
+		COMBO_(left_parenthesis,	9 21,	ALL,	50,	&kp LPAR)
+		COMBO_(right_parenthesis,	10 22,	ALL,	50,	&kp RPAR)
 
 		COMBO_(right_desk,	32  33,	DEFAULT COLEMAK,	50,	&kp LC(RIGHT))
 		COMBO_(left_desk,	31  32,	DEFAULT COLEMAK,	50,	&kp LC(LEFT))
