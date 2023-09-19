@@ -33,6 +33,9 @@
 		COMBO_(left_parenthesis,	&kp LPAR,	9 21,	ALL,	50)
 		COMBO_(right_parenthesis,	&kp RPAR,	10 22,	ALL,	50)
 
+		COMBO_(quote,		&kp SQT,			21	22,	DEFAULT COLEMAK,	50)
+		COMBO_(back_slash,	&kp BSLH,			33	34,	DEFAULT COLEMAK,	50)
+
 		COMBO_(right_desk,	&kp LC(RIGHT),		32  33,	DEFAULT COLEMAK,	50)
 		COMBO_(left_desk,	&kp LC(LEFT),		31  32,	DEFAULT COLEMAK,	50)
 		COMBO_(next_tab,	&kp LC(TAB),		20  21,	DEFAULT COLEMAK,	50)
