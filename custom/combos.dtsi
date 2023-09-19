@@ -25,8 +25,8 @@
 		*/
 
 
-		COMBO_(next_tab,	32  33,	DEFAULT COLEMAK,	80,		&kp LC(TAB))
-		COMBO_(prev_tab,	33  32,	DEFAULT COLEMAK,	80,		&kp LS(LC(TAB)))
+		COMBO_(next_tab,	32  33,	DEFAULT COLEMAK,	100,	&kp LC(TAB))
+		COMBO_(prev_tab,	33  32,	DEFAULT COLEMAK,	100,	&kp LC(LS(TAB)))
 
 	};
 };
