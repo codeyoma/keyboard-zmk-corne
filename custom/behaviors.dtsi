@@ -25,20 +25,13 @@
             bindings = <&kp LGUI>, <&kp LALT>;
         };
 
-		td_low_adj: td_low_adj {
+		td_ctrl_CSA: td_ctrl_CSA {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_LOWER_ADJUST";
+            label = "TAP_DANCE_CTRL_CTRL_SHIFT_ALT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo LOWER>, <&mo ADJUST>;
+            bindings = <&kp LCTRL>, <&kp LC(LS(LALT))>;
         };
 
-		td_rai_adj: td_rai_adj {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_RAISE_ADJUST";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo RAISE>, <&mo ADJUST>;
-        };
     };
 };
