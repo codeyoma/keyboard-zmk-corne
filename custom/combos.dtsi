@@ -24,21 +24,21 @@
 					╰────────────╯  ╰────────────╯
 		*/
 
-		COMBO_(minus,	&kp MINUS, 	19 20 21,	ALL,	50)
-		COMBO_(plus,	&kp PLUS,	19 8 21,	ALL,	50)
-		COMBO_(equal,	&kp EQUAL,	19 8 9,		ALL,	50)
+		COMBO_(minus,	&kp MINUS, 	19 20 21,	ALL,	25)
+		COMBO_(plus,	&kp PLUS,	19 8 21,	ALL,	25)
+		COMBO_(equal,	&kp EQUAL,	19 8 9,		ALL,	25)
 
-		COMBO_(left_bracket,		&kp LBKT,	7 19,	ALL,	50)
-		COMBO_(right_bracket,		&kp RBKT,	8 20,	ALL,	50)
-		COMBO_(left_parenthesis,	&kp LPAR,	9 21,	ALL,	50)
-		COMBO_(right_parenthesis,	&kp RPAR,	10 22,	ALL,	50)
+		COMBO_(left_bracket,		&kp LBKT,	7 19,	ALL,	25)
+		COMBO_(right_bracket,		&kp RBKT,	8 20,	ALL,	25)
+		COMBO_(left_parenthesis,	&kp LPAR,	9 21,	ALL,	25)
+		COMBO_(right_parenthesis,	&kp RPAR,	10 22,	ALL,	25)
 
-		COMBO_(quote,		&kp SQT,			21	22,		DEFAULT COLEMAK,	50)
-		COMBO_(back_slash,	&kp BSLH,			33	34,		DEFAULT COLEMAK,	50)
+		COMBO_(quote,		&kp SQT,			21	22,		DEFAULT COLEMAK,	25)
+		COMBO_(back_slash,	&kp BSLH,			33	34,		DEFAULT COLEMAK,	25)
 
-		COMBO_(next_tab,	&kp LC(TAB),		32  33,		DEFAULT COLEMAK,	50)
-		COMBO_(prev_tab,	&kp LC(LS(TAB)),	31  32,		DEFAULT COLEMAK,	50)
-		COMBO_(right_desk,	&kp LC(RIGHT),		32  33	34,	DEFAULT COLEMAK,	50)
-		COMBO_(left_desk,	&kp LC(LEFT),		31	32	33,	DEFAULT COLEMAK,	50)
+		COMBO_(next_tab,	&kp LC(TAB),		26  27,		DEFAULT COLEMAK,	25)
+		COMBO_(prev_tab,	&kp LC(LS(TAB)),	25  26,		DEFAULT COLEMAK,	25)
+		COMBO_(right_desk,	&kp LC(RIGHT),		26	27	28,	DEFAULT COLEMAK,	25)
+		COMBO_(left_desk,	&kp LC(LEFT),		25	26	27,	DEFAULT COLEMAK,	25)
 	};
 };
