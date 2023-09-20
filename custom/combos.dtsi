@@ -11,6 +11,9 @@
 		__VA_ARGS__ 										\
     };
 
+#define MINIMUM_SPEED	40
+#define	DEFAULT_SPEED	50
+
 / {
 	combos {
 		compatible = "zmk,combos";
@@ -24,21 +27,21 @@
 					╰────────────╯  ╰────────────╯
 		*/
 
-		COMBO_(minus,	&kp MINUS, 	19 20 21,	ALL,	25)
-		COMBO_(plus,	&kp PLUS,	19 8 21,	ALL,	25)
-		COMBO_(equal,	&kp EQUAL,	19 8 9,		ALL,	25)
+		COMBO_(minus,	&kp MINUS, 	19 20 21,	ALL,	DEFAULT_SPEED)
+		COMBO_(plus,	&kp KP_PLUS,19 8 21,	ALL,	DEFAULT_SPEED)
+		COMBO_(equal,	&kp EQUAL,	19 8 9,		ALL,	DEFAULT_SPEED)
 
-		COMBO_(left_bracket,		&kp LBKT,	7 19,	ALL,	25)
-		COMBO_(right_bracket,		&kp RBKT,	8 20,	ALL,	25)
-		COMBO_(left_parenthesis,	&kp LPAR,	9 21,	ALL,	25)
-		COMBO_(right_parenthesis,	&kp RPAR,	10 22,	ALL,	25)
+		COMBO_(left_bracket,		&kp LBKT,	7 19,	ALL,	MINIMUM_SPEED)
+		COMBO_(right_bracket,		&kp RBKT,	8 20,	ALL,	MINIMUM_SPEED)
+		COMBO_(left_parenthesis,	&kp LPAR,	9 21,	ALL,	MINIMUM_SPEED)
+		COMBO_(right_parenthesis,	&kp RPAR,	10 22,	ALL,	MINIMUM_SPEED)
 
-		COMBO_(quote,		&kp SQT,			21	22,		DEFAULT COLEMAK,	25)
-		COMBO_(back_slash,	&kp BSLH,			33	34,		DEFAULT COLEMAK,	25)
+		//COMBO_(quote,		&kp SQT,			21	22,		DEFAULT COLEMAK,	MINIMUM_SPEED)
+		//COMBO_(back_slash,	&kp BSLH,			33	34,		DEFAULT COLEMAK,	MINIMUM_SPEED)
 
-		COMBO_(next_tab,	&kp LC(TAB),		26  27,		DEFAULT COLEMAK,	25)
-		COMBO_(prev_tab,	&kp LC(LS(TAB)),	25  26,		DEFAULT COLEMAK,	25)
-		COMBO_(right_desk,	&kp LC(RIGHT),		26	27	28,	DEFAULT COLEMAK,	25)
-		COMBO_(left_desk,	&kp LC(LEFT),		25	26	27,	DEFAULT COLEMAK,	25)
+		COMBO_(next_tab,	&kp LC(TAB),		33  34,	DEFAULT COLEMAK,	MINIMUM_SPEED)
+		COMBO_(prev_tab,	&kp LC(LS(TAB)),	32  33,	DEFAULT COLEMAK,	MINIMUM_SPEED)
+		COMBO_(right_desk,	&kp LC(RIGHT),		26	27,	DEFAULT COLEMAK,	MINIMUM_SPEED)
+		COMBO_(left_desk,	&kp LC(LEFT),		25	26,	DEFAULT COLEMAK,	MINIMUM_SPEED)
 	};
 };
