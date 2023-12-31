@@ -25,6 +25,14 @@
             bindings = <&kp LGUI>, <&kp LALT>;
         };
 
+        td_alt_gui: td_alt_gui {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_ALT_GUI";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp RALT>, <&kp RGUI>;
+        };
+
 		td_ctrl_CGA: td_ctrl_CGA {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_CTRL_CTRL_GUI_ALT";
