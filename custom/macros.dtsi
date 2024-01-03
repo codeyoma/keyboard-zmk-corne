@@ -34,5 +34,15 @@
 
         MACRO_(nerd_l, 1, 1, PARAM_ZERO, &kp LC(W) &kp H)
         MACRO_(nerd_r, 1, 1, PARAM_ZERO, &kp LC(W) &kp U)
+
+		lang_change: lang_change {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp RALT>
+                , <&macro_tap &tog COLEMAK>
+                ;
+        };
+
     };
 };
