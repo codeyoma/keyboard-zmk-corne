@@ -149,7 +149,7 @@
 	&sys_reset     	XXXXXXXX		XXXXXXXX        &out OUT_USB   	&out OUT_BLE    &tog COLEMAK        &kp C_PREV      &kp C_VOL_DN    &kp C_VOL_UP    &kp C_NEXT      XXXXXXXX        XXXXXXXX
 // ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 //  24              25              26              27              28              29                  30              31              32              33              34              35
-	XXXXXXXX      	XXXXXXXX		XXXXXXXX        XXXXXXXX		XXXXXXXX        &tog HOMEROW        &kp C_PP        &kp C_MUTE     	XXXXXXXX        XXXXXXXX        XXXXXXXX        XXXXXXXX
+	XXXXXXXX      	XXXXXXXX		XXXXXXXX        XXXXXXXX		XXXXXXXX        XXXXXXXX            &kp C_PP        &kp C_MUTE     	XXXXXXXX        XXXXXXXX        XXXXXXXX        XXXXXXXX
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
 //                                                  36              37              38                  39              40              41
                                     	            XXXXXXXX       	XXXXXXXX        XXXXXXXX           	XXXXXXXX        XXXXXXXX        &mo TEST
