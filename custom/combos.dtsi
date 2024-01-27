@@ -27,9 +27,9 @@
 					╰────────────╯  ╰────────────╯
 		*/
 
-		COMBO_(minus,	&kp MINUS, 	19 20 21,	ALL,	DEFAULT_SPEED)
-		COMBO_(plus,	&kp KP_PLUS,19 8 21,	ALL,	DEFAULT_SPEED)
-		COMBO_(equal,	&kp EQUAL,	19 8 9,		ALL,	DEFAULT_SPEED)
+		// COMBO_(minus,	&kp MINUS, 	19 20 21,	ALL,	DEFAULT_SPEED)
+		// COMBO_(plus,	&kp KP_PLUS,19 8 21,	ALL,	DEFAULT_SPEED)
+		// COMBO_(equal,	&kp EQUAL,	19 8 9,		ALL,	DEFAULT_SPEED)
 
 		COMBO_(left_bracket,		&kp LBKT,	7 19,	ALL,	MINIMUM_SPEED)
 		COMBO_(right_bracket,		&kp RBKT,	8 20,	ALL,	MINIMUM_SPEED)
