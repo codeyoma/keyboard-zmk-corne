@@ -20,10 +20,10 @@
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <TAPPING_TERM_MS>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <300>;
+            require-prior-idle-ms = <GLOBAL_QUICK_TAP_MS>;
             bindings = <&kp>, <&kp>;
         };
 

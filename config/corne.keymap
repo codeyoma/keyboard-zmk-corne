@@ -33,7 +33,7 @@
 #define MOVE_LEFT	&kp LG(LBKT)
 #define MOVE_RIGHT	&kp LG(RBKT)
 
-#define TAPPING_TERM_MS		350
+#define TAPPING_TERM_MS		300
 #define TD_TAPPING_TERM_MS	350
 #define QUICK_TAP_MS		140
 #define GLOBAL_QUICK_TAP_MS	150
