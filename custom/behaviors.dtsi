@@ -23,7 +23,7 @@
             tapping-term-ms = <TAPPING_TERM_MS>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <GLOBAL_QUICK_TAP_MS>;
+            require-prior-idle-ms = <IDLE_MS>;
             bindings = <&kp>, <&kp>;
         };
 

@@ -37,6 +37,7 @@
 #define TD_TAPPING_TERM_MS	350
 #define QUICK_TAP_MS		140
 #define GLOBAL_QUICK_TAP_MS	150
+#define IDLE_MS				220
 
 #define PARAM_ZERO	0
 #define PARAM_ONE	1
