@@ -28,6 +28,7 @@
 		*/
 
 		COMBO_(escape,		&kp ESC,			1	2,	DEFAULT COLEMAK,				MINIMUM_SPEED)
+		COMBO_(escape,		&kp ESC,			37	38,	DEFAULT COLEMAK,				MINIMUM_SPEED)
 		COMBO_(tab,			&kp TAB,			25	26,	DEFAULT COLEMAK,				MINIMUM_SPEED)
 
 		COMBO_(back_space,	&kp BSPC,			9	10,	DEFAULT COLEMAK,				MINIMUM_SPEED)
