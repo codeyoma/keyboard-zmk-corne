@@ -27,8 +27,8 @@
 					╰────────╯  ╰────────╯
 		*/
 
-		COMBO_(escape,		&kp ESC,			1	2,	DEFAULT COLEMAK,				MINIMUM_SPEED)
-		COMBO_(escape,		&kp ESC,			37	38,	DEFAULT COLEMAK,				MINIMUM_SPEED)
+		COMBO_(escape_1,	&kp ESC,			1	2,	DEFAULT COLEMAK,				MINIMUM_SPEED)
+		COMBO_(escape_2,	&kp ESC,			37	38,	DEFAULT COLEMAK,				MINIMUM_SPEED)
 
 		COMBO_(l_bracket,	&kp LBKT,			7	19,	DEFAULT COLEMAK LOWER,			MINIMUM_SPEED)
 		COMBO_(r_bracket,	&kp RBKT,			8	20,	DEFAULT COLEMAK LOWER,			MINIMUM_SPEED)
