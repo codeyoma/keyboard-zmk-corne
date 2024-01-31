@@ -44,16 +44,17 @@
 #define HM_RP	&hm LCTRL
 
 #define TAPPING_TERM_MS		300
+#define LT_TAPPING_TERM_MS	300
 #define TD_TAPPING_TERM_MS	350
 #define QUICK_TAP_MS		140
 #define GLOBAL_QUICK_TAP_MS	150
-#define IDLE_MS				220
+#define IDLE_MS				100
 
 #define PARAM_ZERO	0
 #define PARAM_ONE	1
 #define PARAM_TWO	2
 
-#define CORNE_42_MODE
+#define CORNE_34_MODE
 
 #ifdef CORNE_42_MODE
 #include "../custom_42/behaviors.dtsi"

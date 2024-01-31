@@ -2,29 +2,31 @@
  *	https://zmk.dev/docs/config/behaviors
  */
 
+
 &lt {
-    flavor          = "tap-preferred";
-    tapping-term-ms = <200>;
-    quick-tap-ms    = <QUICK_TAP_MS>;
+    flavor                  = "tap-preferred";
+    tapping-term-ms         = <LT_TAPPING_TERM_MS>;
+    quick-tap-ms            = <0>;
+    require-prior-idle-ms   = <IDLE_MS>;
 };
 
 &mt {
-	flavor = "balanced";
-	tapping-term-ms = <TAPPING_TERM_MS>;
-	quick-tap-ms = <QUICK_TAP_MS>;
+    flavor                  = "tap-preferred";
+	tapping-term-ms         = <TAPPING_TERM_MS>;
+	quick-tap-ms            = <QUICK_TAP_MS>;
 };
 
 / {
 	behaviors {
 
         hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <TAPPING_TERM_MS>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <IDLE_MS>;
-            bindings = <&kp>, <&kp>;
+            compatible              = "zmk,behavior-hold-tap";
+            #binding-cells          = <2>;
+            flavor                  = "tap-preferred";
+            tapping-term-ms         = <TAPPING_TERM_MS>;
+            quick-tap-ms            = <0>;
+            require-prior-idle-ms   = <IDLE_MS>;
+            bindings                = <&kp>, <&kp>;
         };
 
         td_gui_alt: tap_dance_gui_alt {
