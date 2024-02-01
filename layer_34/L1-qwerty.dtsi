@@ -20,7 +20,7 @@
 	XXXXXXXX			&kp Z     		&kp X      		&kp C      		&kp V       	&kp B               &kp N           &kp M       	&kp COMMA  		&kp DOT   		&kp FSLH
 	XXXXXXXX	//	╰───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┴───────────────╯
 //	36              													37              38                  39              40
-	XXXXXXXX       														&kp TAB			&lt LOWER SPACE		&lt RAISE ENTER	&kp BSPC
+	XXXXXXXX       														&kp TAB			&mo LOWER			&mo RAISE		&kp SPACE
 //                                                                  ╰───────────────┴───────────────╯   ╰───────────────┴───────────────╯
 	XXXXXXXX
 			>;
