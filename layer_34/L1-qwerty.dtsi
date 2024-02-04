@@ -20,7 +20,7 @@
 	XXXXXXXX			&kp Z     		&kp X      		&kp C      		&kp V       	&kp B               &kp N           &kp M       	&kp COMMA  		&kp DOT   		&kp FSLH
 	XXXXXXXX	//	╰───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┴───────────────╯
 //	36              													37              38                  39              40
-	XXXXXXXX       														&kp TAB			&mo LOWER			&mo RAISE		&kp SPACE
+	XXXXXXXX       														HM_LI TAB		&mo LOWER			&mo RAISE		&kp SPACE
 //                                                                  ╰───────────────┴───────────────╯   ╰───────────────┴───────────────╯
 	XXXXXXXX
 			>;
