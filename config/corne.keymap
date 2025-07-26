@@ -37,6 +37,7 @@
 #define HM_LR	&hm LGUI
 #define HM_LM	&hm LALT
 #define HM_LI	&hm LSHFT
+#define HM_LI_2	&hm GLOBE
 
 #define HM_RI	&hm LSHFT
 #define HM_RM	&hm LALT
